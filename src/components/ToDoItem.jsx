@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function ToDoItem(props) {
   return (
@@ -7,7 +7,7 @@ function ToDoItem(props) {
         props.onChecked(props.id);
       }}
     >
-      <li>{props.itemText}</li>
+      <li>{props.text}</li>
     </div>
   );
 }

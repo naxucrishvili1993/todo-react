@@ -6,13 +6,13 @@ function App() {
   const [items, setItems] = useState([]);
 
   function addItem(inputText) {
-    setItems((prevItems) => {
+    setItems(prevItems => {
       return [...prevItems, inputText];
     });
   }
 
   function deleteItem(id) {
-    setItems((prevItems) => {
+    setItems(prevItems => {
       return prevItems.filter((item, index) => {
         return index !== id;
       });
