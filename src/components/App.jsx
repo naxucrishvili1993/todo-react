@@ -6,9 +6,11 @@ function App() {
   const [items, setItems] = useState([]);
 
   function addItem(inputText) {
-    setItems(prevItems => {
-      return [...prevItems, inputText];
-    });
+   if(inputText !== '') {
+      setItems(prevItems => {
+        return [...prevItems, inputText];
+      });
+   }
   }
 
   function deleteItem(id) {
